@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/transparan">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/layout_bg">
+
+        <ImageView
+            android:id="@+id/imagecircleitem"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icons_item_warna" />
+
+        <TextView
+            android:id="@+id/single_nama_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Item"
+            android:textSize="25sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="false"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="80dp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/single_kode_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kode Item"
+            android:textSize="15sp"
+            android:textColor="@color/hitam"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/single_merek_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Merek Item"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="false"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="80dp"
+            tools:ignore="RtlCompat"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

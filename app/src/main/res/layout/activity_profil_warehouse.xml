@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".warehouse.ProfilWarehouseActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarprofilwarehouse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="@color/putih"
+        tools:ignore="PrivateResource,RtlCompat">
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/infodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarprofilwarehouse"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:text="INFO DATA:"
+        android:textSize="20dp"
+        android:textColor="@color/hitam" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollIndicators="right"
+        android:layout_above="@id/cek"
+        android:layout_below="@id/infodata">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textkode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="2dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                tools:ignore="RtlCompat">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/profilkodeitemwar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:hint="Kode Item"
+                    android:editable="false"
+                    android:clickable="false"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textnama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textkode"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="2dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                tools:ignore="RtlCompat">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/profilnamaitemwar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:hint="Nama Item"
+                    android:editable="false"
+                    android:clickable="false"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textfieldket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textnama"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/profilketeranganitemwar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="6"
+                    android:hint="Keterangan Item"
+                    android:gravity="top|left"
+                    android:clickable="false"
+                    android:editable="false"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textfieldtglmasuk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textfieldket"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="2dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                tools:ignore="RtlCompat">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/profiltglmasukwar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:hint="Tanggal Masuk"
+                    android:clickable="false"
+                    android:editable="false"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textfieldtglupdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textfieldtglmasuk"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="2dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                tools:ignore="RtlCompat">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/profiltglupdatewar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:hint="Terakhir di Update"
+                    android:clickable="false"
+                    android:editable="false"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textfielduser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textfieldtglupdate"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="2dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                tools:ignore="RtlCompat">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/profiluserwar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:hint="Terakhir di Update oleh"
+                    android:clickable="false"
+                    android:editable="false"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/judulupdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textfielduser"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="40dp"
+                android:text="UPDATE STOCK:"
+                android:textSize="20dp"
+                android:textColor="@color/hitam"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textfieldstock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/judulupdate"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="2dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                tools:ignore="NotSibling,RtlCompat">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/profiljumlahstockwar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:hint="Jumlah Stock"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/cek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@id/linearbuttons"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="5dp"
+        android:text="Email"
+        android:textSize="15sp"
+        android:textColor="@color/hitam"/>
+
+    <LinearLayout
+        android:id="@+id/linearbuttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="RtlCompat" >
+
+        <Button
+            android:id="@+id/btnupdateItemWar"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:text="Update"
+            android:textColor="@color/cardview_light_background"
+            />
+    </LinearLayout>
+</RelativeLayout>
